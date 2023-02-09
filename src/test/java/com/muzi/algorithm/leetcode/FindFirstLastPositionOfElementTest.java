@@ -55,6 +55,6 @@ class FindFirstLastPositionOfElementTest {
     }
 
     private int[] executeSolution(int[] input, int target) {
-        return new FindFirstLastPositionOfElement().searchRange(input, target);
+        return new FindFirstLastPositionOfElement_34().searchRange(input, target);
     }
 }

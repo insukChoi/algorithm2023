@@ -4,7 +4,7 @@ package com.muzi.algorithm.leetcode;
  * 34. Find First and Last Position of Element in Sorted Array
  * @see [find-first-and-last-position-of-element-in-sorted-array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
  */
-public class FindFirstLastPositionOfElement {
+public class FindFirstLastPositionOfElement_34 {
     public int[] searchRange(int[] nums, int target) {
         final int firstIndex = firstIndex(nums, target);
         final int lastIndex = lastIndex(nums, target);
