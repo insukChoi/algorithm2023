@@ -3,6 +3,10 @@ package com.muzi.algorithm.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 78. Subsets
+ * @see <a href="https://leetcode.com/problems/subsets/">subsets</a>
+ */
 public class Subsets_78 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
