@@ -1,8 +1,11 @@
 package com.muzi.algorithm.leetcode;
 
+/**
+ * 198. House Robber
+ * @see <a href="https://leetcode.com/problems/house-robber">house-robber</a>
+ */
 public class HouseRobber_198 {
     public int rob(int[] nums) {
-        if (nums.length == 0) return 0;
         if (nums.length == 1) return nums[0];
 
         nums[1] = Math.max(nums[0], nums[1]);
