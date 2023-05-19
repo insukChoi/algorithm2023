@@ -19,9 +19,8 @@ public class PersonalInformation {
 
         LocalDate localToday = convertLocalDateWithBasicIsoDate(today);
         for (int i = 0; i < privacies.length; i++) {
-            final String privacy = privacies[i];
-            final String targetDate = privacy.split(EMPTY_STRING)[0];
-            final String targetCharacter = privacy.split(EMPTY_STRING)[1];
+            final String targetDate = privacies[i].split(EMPTY_STRING)[0];
+            final String targetCharacter = privacies[i].split(EMPTY_STRING)[1];
 
             if (expiredDate(terms, targetDate, targetCharacter)
                     .isBefore(localToday)) {
@@ -62,7 +61,7 @@ public class PersonalInformation {
     /**
      * YYYY.MM.DD 형식의 String 을 LocalDate 로 변환한다.
      *
-     * @param YYYY.MM.DD
+     * @param today = YYYY.MM.DD
      */
     private static LocalDate convertLocalDateWithBasicIsoDate(final String today) {
         return LocalDate.parse(today.replaceAll("\\.", ""), DateTimeFormatter.BASIC_ISO_DATE);
