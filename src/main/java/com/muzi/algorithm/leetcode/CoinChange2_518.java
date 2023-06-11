@@ -19,8 +19,8 @@ public class CoinChange2_518 {
             return 0; // 불가능한 경우
         }
 
-        int includeCurrent = coinChangeRecursive(amount - coins[index], coins, index); // 현재 동전을 포함하는 경우
-        int excludeCurrent = coinChangeRecursive(amount, coins, index + 1); // 현재 동전을 포함하지 않는 경우
+        int includeCurrent = coinChangeRecursive(amount - coins[index], coins, index); // 현재 동전을 포함시키는 경우
+        int excludeCurrent = coinChangeRecursive(amount, coins, index + 1); // 현재 동전을 포함시키지 않는 경우
 
         return includeCurrent + excludeCurrent;
     }
